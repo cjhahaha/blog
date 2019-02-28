@@ -1794,7 +1794,7 @@ pre .javascript .function {
   vertical-align: top;
   height: 2px;
   width: 100%;
-  background: #fff;
+  background-color: #4ecca3 !important;
   margin-top: 3px;
 }
 .sidebar-toggle-line:first-child {
@@ -1891,7 +1891,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff8c96;
+  background: #2a33ff;
 }
 .links-of-blogroll {
   font-size: 13px;
