@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="send emailI want to use my qqemail and SMTP service to send email DO NOT FORGET, go to qq mail setting and enable SMTP service then you will get an auth string. 12345678910111213141516171819202122impo">
+  <meta name="description" content="First of all, go to your mail setting and enable SMTP service then you will get an auth string.  If you are using qqmail, you can just use the host address below. If not, you have to find it yourself.">
 <meta name="keywords" content="python,email">
 <meta property="og:type" content="article">
-<meta property="og:title" content="How to send mail using Python.">
+<meta property="og:title" content="send mail using Python | 用python发送邮件">
 <meta property="og:url" content="https://cjhahaha.github.io/2017/04/13/python-email/index.html">
 <meta property="og:site_name" content="cj land">
-<meta property="og:description" content="send emailI want to use my qqemail and SMTP service to send email DO NOT FORGET, go to qq mail setting and enable SMTP service then you will get an auth string. 12345678910111213141516171819202122impo">
+<meta property="og:description" content="First of all, go to your mail setting and enable SMTP service then you will get an auth string.  If you are using qqmail, you can just use the host address below. If not, you have to find it yourself.">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-02-28T12:36:26.068Z">
+<meta property="og:updated_time" content="2019-03-01T02:49:58.207Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="How to send mail using Python.">
-<meta name="twitter:description" content="send emailI want to use my qqemail and SMTP service to send email DO NOT FORGET, go to qq mail setting and enable SMTP service then you will get an auth string. 12345678910111213141516171819202122impo">
+<meta name="twitter:title" content="send mail using Python | 用python发送邮件">
+<meta name="twitter:description" content="First of all, go to your mail setting and enable SMTP service then you will get an auth string.  If you are using qqmail, you can just use the host address below. If not, you have to find it yourself.">
 
 
 
@@ -124,7 +124,7 @@
   };
 </script>
 
-  <title>How to send mail using Python. | cj land</title>
+  <title>send mail using Python | 用python发送邮件 | cj land</title>
   
 
 
@@ -323,7 +323,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">How to send mail using Python.
+          <h2 class="post-title" itemprop="name headline">send mail using Python | 用python发送邮件
 
               
             
@@ -366,7 +366,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-02-28 20:36:26" itemprop="dateModified" datetime="2019-02-28T20:36:26+08:00">2019-02-28</time>
+                <time title="Modified: 2019-03-01 10:49:58" itemprop="dateModified" datetime="2019-03-01T10:49:58+08:00">2019-03-01</time>
               
             
           </span>
@@ -418,11 +418,9 @@
       
 
       
-        <h2 id="send-email"><a href="#send-email" class="headerlink" title="send email"></a>send email</h2><h4 id="I-want-to-use-my-qqemail-and-SMTP-service-to-send-email"><a href="#I-want-to-use-my-qqemail-and-SMTP-service-to-send-email" class="headerlink" title="I want to use my qqemail and SMTP service to send email"></a>I want to use my qqemail and SMTP service to send email</h4><ul>
-<li><strong>DO NOT FORGET</strong>, go to qq mail setting and enable SMTP service</li>
-<li>then you will get an auth string. <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> smtplib  </span><br><span class="line"><span class="keyword">import</span> email.mime.multipart  </span><br><span class="line"><span class="keyword">import</span> email.mime.text</span><br><span class="line"></span><br><span class="line">me = <span class="string">'xxx@qq.com'</span></span><br><span class="line">auth_string = <span class="string">''</span> <span class="comment"># your auth string</span></span><br><span class="line"></span><br><span class="line">msg = email.mime.multipart.MIMEMultipart()  </span><br><span class="line">msg[<span class="string">'from'</span>] = me  </span><br><span class="line">msg[<span class="string">'to'</span>] = <span class="comment"># receiver</span></span><br><span class="line">msg[<span class="string">'subject'</span>] = <span class="comment"># subject</span></span><br><span class="line">content = <span class="comment"># content</span></span><br><span class="line">msg.attach(email.mime.text.MIMEText(content))</span><br><span class="line"></span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    smtpObj = smtplib.SMTP_SSL(<span class="string">"smtp.qq.com"</span>, <span class="number">465</span>)</span><br><span class="line">    smtpObj.connect(<span class="string">'smtp.qq.com'</span>, <span class="number">465</span>)</span><br><span class="line">	smtpObj.login(me, auth_string)</span><br><span class="line">	smtpObj.sendmail(msg[<span class="string">'from'</span>], msg[<span class="string">'to'</span>], msg.as_string())</span><br><span class="line">	print(<span class="string">"YES!"</span>)</span><br><span class="line"><span class="keyword">except</span> smtplib.SMTPException:</span><br><span class="line">	print(<span class="string">"No..."</span>)</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
+        <p>First of all, go to your mail setting and enable SMTP service then you will get an auth string. </p>
+<p>If you are using qqmail, you can just use the host address below. If not, you have to find it yourself. </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> smtplib  </span><br><span class="line"><span class="keyword">import</span> email.mime.multipart  </span><br><span class="line"><span class="keyword">import</span> email.mime.text</span><br><span class="line"></span><br><span class="line">me = <span class="string">'xxx@qq.com'</span></span><br><span class="line">auth_string = <span class="string">''</span> <span class="comment"># your auth string</span></span><br><span class="line"></span><br><span class="line">msg = email.mime.multipart.MIMEMultipart()  </span><br><span class="line">msg[<span class="string">'from'</span>] = me  </span><br><span class="line">msg[<span class="string">'to'</span>] = <span class="comment"># receiver</span></span><br><span class="line">msg[<span class="string">'subject'</span>] = <span class="comment"># subject</span></span><br><span class="line">content = <span class="comment"># content</span></span><br><span class="line">msg.attach(email.mime.text.MIMEText(content))</span><br><span class="line"></span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    smtpObj = smtplib.SMTP_SSL(<span class="string">"smtp.qq.com"</span>, <span class="number">465</span>)</span><br><span class="line">    smtpObj.connect(<span class="string">'smtp.qq.com'</span>, <span class="number">465</span>)</span><br><span class="line">	smtpObj.login(me, auth_string)</span><br><span class="line">	smtpObj.sendmail(msg[<span class="string">'from'</span>], msg[<span class="string">'to'</span>], msg.as_string())</span><br><span class="line">	print(<span class="string">"YES!"</span>)</span><br><span class="line"><span class="keyword">except</span> smtplib.SMTPException:</span><br><span class="line">	print(<span class="string">"No..."</span>)</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -513,17 +511,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <div class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -621,23 +610,6 @@
         </div>
       </div>
 
-      
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-            
-            
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#send-email"><span class="nav-number">1.</span> <span class="nav-text">send email</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#I-want-to-use-my-qqemail-and-SMTP-service-to-send-email"><span class="nav-number">1.0.1.</span> <span class="nav-text">I want to use my qqemail and SMTP service to send email</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </div>
-      <!--/noindex-->
       
 
       

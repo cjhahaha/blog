@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="ubuntu 16.04安装和配置shadowsocks install12# 需要python3pip3 install shadowsocks configuration随便找个地方1vim shadowsocks.json 编辑内容如下123456789&amp;#123;&quot;server&quot;:&quot;122.9.27.15&quot;,#你的服务器IP&quot;server_port&quot;:8389, #你要开放的接口&quot;pass">
+  <meta name="description" content="ubuntu 16.04安装和配置shadowsocks install12# 需要python3 和 python3-pip 哦pip3 install shadowsocks configuration随便找个地方1vim shadowsocks.json 编辑内容如下123456789&amp;#123;	&quot;server&quot;: &quot;你的服务器IP&quot;	&quot;server_port&quot;: 8389,#你要开放的接">
 <meta name="keywords" content="computer network">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ubuntu 16.04安装和配置shadowsocks">
+<meta property="og:title" content="ss set up | 安装ss">
 <meta property="og:url" content="https://cjhahaha.github.io/2018/05/06/ss/index.html">
 <meta property="og:site_name" content="cj land">
-<meta property="og:description" content="ubuntu 16.04安装和配置shadowsocks install12# 需要python3pip3 install shadowsocks configuration随便找个地方1vim shadowsocks.json 编辑内容如下123456789&amp;#123;&quot;server&quot;:&quot;122.9.27.15&quot;,#你的服务器IP&quot;server_port&quot;:8389, #你要开放的接口&quot;pass">
+<meta property="og:description" content="ubuntu 16.04安装和配置shadowsocks install12# 需要python3 和 python3-pip 哦pip3 install shadowsocks configuration随便找个地方1vim shadowsocks.json 编辑内容如下123456789&amp;#123;	&quot;server&quot;: &quot;你的服务器IP&quot;	&quot;server_port&quot;: 8389,#你要开放的接">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-02-28T12:37:32.925Z">
+<meta property="og:updated_time" content="2019-03-01T02:52:11.214Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ubuntu 16.04安装和配置shadowsocks">
-<meta name="twitter:description" content="ubuntu 16.04安装和配置shadowsocks install12# 需要python3pip3 install shadowsocks configuration随便找个地方1vim shadowsocks.json 编辑内容如下123456789&amp;#123;&quot;server&quot;:&quot;122.9.27.15&quot;,#你的服务器IP&quot;server_port&quot;:8389, #你要开放的接口&quot;pass">
+<meta name="twitter:title" content="ss set up | 安装ss">
+<meta name="twitter:description" content="ubuntu 16.04安装和配置shadowsocks install12# 需要python3 和 python3-pip 哦pip3 install shadowsocks configuration随便找个地方1vim shadowsocks.json 编辑内容如下123456789&amp;#123;	&quot;server&quot;: &quot;你的服务器IP&quot;	&quot;server_port&quot;: 8389,#你要开放的接">
 
 
 
@@ -124,7 +124,7 @@
   };
 </script>
 
-  <title>ubuntu 16.04安装和配置shadowsocks | cj land</title>
+  <title>ss set up | 安装ss | cj land</title>
   
 
 
@@ -323,7 +323,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">ubuntu 16.04安装和配置shadowsocks
+          <h2 class="post-title" itemprop="name headline">ss set up | 安装ss
 
               
             
@@ -366,7 +366,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-02-28 20:37:32" itemprop="dateModified" datetime="2019-02-28T20:37:32+08:00">2019-02-28</time>
+                <time title="Modified: 2019-03-01 10:52:11" itemprop="dateModified" datetime="2019-03-01T10:52:11+08:00">2019-03-01</time>
               
             
           </span>
@@ -419,9 +419,9 @@
 
       
         <p>ubuntu 16.04安装和配置shadowsocks</p>
-<h2 id="install"><a href="#install" class="headerlink" title="install"></a>install</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 需要python3</span></span><br><span class="line">pip3 install shadowsocks</span><br></pre></td></tr></table></figure>
+<h2 id="install"><a href="#install" class="headerlink" title="install"></a>install</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 需要python3 和 python3-pip 哦</span></span><br><span class="line">pip3 install shadowsocks</span><br></pre></td></tr></table></figure>
 <h2 id="configuration"><a href="#configuration" class="headerlink" title="configuration"></a>configuration</h2><p>随便找个地方<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim shadowsocks.json</span><br></pre></td></tr></table></figure></p>
-<p>编辑内容如下<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">"server":"122.9.27.15",#你的服务器IP</span><br><span class="line">"server_port":8389, #你要开放的接口</span><br><span class="line">"password":"＊＊＊",   #密码</span><br><span class="line">"timeout":300,</span><br><span class="line">"method":"aes-256-cfb",</span><br><span class="line">"fast_open":true,</span><br><span class="line">"workers": 1</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>编辑内容如下<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	<span class="attr">"server"</span>: <span class="string">"你的服务器IP"</span></span><br><span class="line">	"server_port": 8389,#你要开放的接口</span><br><span class="line">	"password": "密码",</span><br><span class="line">	"timeout": 300,</span><br><span class="line">	"method":"aes-256-cfb",</span><br><span class="line">	"fast_open": true,</span><br><span class="line">	"workers": 1</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <h2 id="run"><a href="#run" class="headerlink" title="run"></a>run</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nohup ssserver -c ~/.ss/shadowsocks.json -d start &amp;</span><br></pre></td></tr></table></figure>
 
       
@@ -459,8 +459,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/04/11/mac-oracle/" rel="next" title="mac下oracle的最佳实践">
-                <i class="fa fa-chevron-left"></i> mac下oracle的最佳实践
+              <a href="/2018/04/11/mac-oracle/" rel="next" title="install oracle on Mac os X | mac下oracle的最佳实践">
+                <i class="fa fa-chevron-left"></i> install oracle on Mac os X | mac下oracle的最佳实践
               </a>
             
           </div>
@@ -469,8 +469,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/06/11/nginx-upload-module/" rel="prev" title="nginx-upload-module">
-                nginx-upload-module <i class="fa fa-chevron-right"></i>
+              <a href="/2018/06/11/nginx-upload-module/" rel="prev" title="install nginx-upload-module | 安装install nginx-upload-module">
+                install nginx-upload-module | 安装install nginx-upload-module <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
