@@ -1117,7 +1117,7 @@ pre .javascript .function {
   background: #222;
   font-size: 12px;
   opacity: 1;
-  color: #fff;
+  color: #4ecca3;
   cursor: pointer;
   text-align: center;
   -webkit-transform: translateZ(0);
@@ -1891,7 +1891,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #30ddff;
+  background: #deff88;
 }
 .links-of-blogroll {
   font-size: 13px;
