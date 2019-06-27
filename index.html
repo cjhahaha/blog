@@ -302,7 +302,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://cjhahaha.github.io/2019/02/28/hadoop/">
+    <link itemprop="mainEntityOfPage" href="https://cjhahaha.github.io/2019/02/28/hadoop-chap3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="cjhahaha">
@@ -322,7 +322,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/02/28/hadoop/" class="post-title-link" itemprop="url">hadoop</a>
+                <a href="/2019/02/28/hadoop-chap3/" class="post-title-link" itemprop="url">HDFS | hadoop 分布式文件系统</a>
               
             
           </h2>
@@ -347,12 +347,24 @@
                 
               
 
-              <time title="Created: 2019-02-28 15:26:23 / Modified: 20:38:40" itemprop="dateCreated datePublished" datetime="2019-02-28T15:26:23+08:00">2019-02-28</time>
+              <time title="Created: 2019-02-28 15:26:23" itemprop="dateCreated datePublished" datetime="2019-02-28T15:26:23+01:00">2019-02-28</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-03-02 12:35:37" itemprop="dateModified" datetime="2019-03-02T12:35:37+01:00">2019-03-02</time>
               
             
           </span>
@@ -407,13 +419,34 @@
         
           
             <p>
-              
+              1 概念1.1 数据块
+联想硬盘的数据块，不过大小不是固定（存的数据多大就是多大），而且更大，这样使得寻址时间远远小于传送时间。
+
+分块存储的好处：存的下很大的文件、容错好。
+
+
+1.2 namenode 和 datenode1.2.1 namenode
+维护文件系统树、树内的文件和目录
+
+永久保存：命名空间镜像文件、编辑日志文件
+
+容错
+备份
+辅助namenode（像time machine）
+
+
+
+1.2.2 datanode
+工作节点，受client和namenode调度
+存储并检索块
+
+
               
             </p>
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/2019/02/28/hadoop/#more" rel="contents">
+              <a class="btn" href="/2019/02/28/hadoop-chap3/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -518,7 +551,7 @@
                 
               
 
-              <time title="Created: 2018-08-20 19:46:57" itemprop="dateCreated datePublished" datetime="2018-08-20T19:46:57+08:00">2018-08-20</time>
+              <time title="Created: 2018-08-20 19:46:57" itemprop="dateCreated datePublished" datetime="2018-08-20T19:46:57+02:00">2018-08-20</time>
             
 
             
@@ -535,7 +568,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-02-28 20:40:34" itemprop="dateModified" datetime="2019-02-28T20:40:34+08:00">2019-02-28</time>
+                <time title="Modified: 2019-02-28 13:40:34" itemprop="dateModified" datetime="2019-02-28T13:40:34+01:00">2019-02-28</time>
               
             
           </span>
@@ -684,7 +717,7 @@
                 
               
 
-              <time title="Created: 2018-06-11 13:17:32" itemprop="dateCreated datePublished" datetime="2018-06-11T13:17:32+08:00">2018-06-11</time>
+              <time title="Created: 2018-06-11 13:17:32" itemprop="dateCreated datePublished" datetime="2018-06-11T13:17:32+02:00">2018-06-11</time>
             
 
             
@@ -701,7 +734,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-03-01 10:50:23" itemprop="dateModified" datetime="2019-03-01T10:50:23+08:00">2019-03-01</time>
+                <time title="Modified: 2019-03-01 03:50:23" itemprop="dateModified" datetime="2019-03-01T03:50:23+01:00">2019-03-01</time>
               
             
           </span>
@@ -874,7 +907,7 @@ wget http://nginx.org/download/nginx-1.14.0.tar.gz
                 
               
 
-              <time title="Created: 2018-05-06 21:04:44" itemprop="dateCreated datePublished" datetime="2018-05-06T21:04:44+08:00">2018-05-06</time>
+              <time title="Created: 2018-05-06 21:04:44" itemprop="dateCreated datePublished" datetime="2018-05-06T21:04:44+02:00">2018-05-06</time>
             
 
             
@@ -891,7 +924,7 @@ wget http://nginx.org/download/nginx-1.14.0.tar.gz
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-03-01 10:52:11" itemprop="dateModified" datetime="2019-03-01T10:52:11+08:00">2019-03-01</time>
+                <time title="Modified: 2019-03-01 03:52:11" itemprop="dateModified" datetime="2019-03-01T03:52:11+01:00">2019-03-01</time>
               
             
           </span>
@@ -1061,7 +1094,7 @@ runnohup ssser
                 
               
 
-              <time title="Created: 2018-04-11 18:52:23" itemprop="dateCreated datePublished" datetime="2018-04-11T18:52:23+08:00">2018-04-11</time>
+              <time title="Created: 2018-04-11 18:52:23" itemprop="dateCreated datePublished" datetime="2018-04-11T18:52:23+02:00">2018-04-11</time>
             
 
             
@@ -1078,7 +1111,7 @@ runnohup ssser
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-03-01 10:52:51" itemprop="dateModified" datetime="2019-03-01T10:52:51+08:00">2019-03-01</time>
+                <time title="Modified: 2019-03-01 03:52:51" itemprop="dateModified" datetime="2019-03-01T03:52:51+01:00">2019-03-01</time>
               
             
           </span>
@@ -1257,7 +1290,7 @@ docker image ls
                 
               
 
-              <time title="Created: 2018-03-12 19:42:38" itemprop="dateCreated datePublished" datetime="2018-03-12T19:42:38+08:00">2018-03-12</time>
+              <time title="Created: 2018-03-12 19:42:38" itemprop="dateCreated datePublished" datetime="2018-03-12T19:42:38+01:00">2018-03-12</time>
             
 
             
@@ -1274,7 +1307,7 @@ docker image ls
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-03-01 10:53:24" itemprop="dateModified" datetime="2019-03-01T10:53:24+08:00">2019-03-01</time>
+                <time title="Modified: 2019-03-01 03:53:24" itemprop="dateModified" datetime="2019-03-01T03:53:24+01:00">2019-03-01</time>
               
             
           </span>
@@ -1443,7 +1476,7 @@ zsh &amp;&amp; oh-my-zshsudo apt-get install zshsudo chsh -s $(which zsh)sh -c "
                 
               
 
-              <time title="Created: 2017-06-22 03:29:26" itemprop="dateCreated datePublished" datetime="2017-06-22T03:29:26+08:00">2017-06-22</time>
+              <time title="Created: 2017-06-22 03:29:26" itemprop="dateCreated datePublished" datetime="2017-06-22T03:29:26+02:00">2017-06-22</time>
             
 
             
@@ -1460,7 +1493,7 @@ zsh &amp;&amp; oh-my-zshsudo apt-get install zshsudo chsh -s $(which zsh)sh -c "
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-02-28 20:41:51" itemprop="dateModified" datetime="2019-02-28T20:41:51+08:00">2019-02-28</time>
+                <time title="Modified: 2019-02-28 13:41:51" itemprop="dateModified" datetime="2019-02-28T13:41:51+01:00">2019-02-28</time>
               
             
           </span>
@@ -1656,7 +1689,7 @@ HE
                 
               
 
-              <time title="Created: 2017-04-13 14:54:23" itemprop="dateCreated datePublished" datetime="2017-04-13T14:54:23+08:00">2017-04-13</time>
+              <time title="Created: 2017-04-13 14:54:23" itemprop="dateCreated datePublished" datetime="2017-04-13T14:54:23+02:00">2017-04-13</time>
             
 
             
@@ -1673,7 +1706,7 @@ HE
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-03-01 10:49:58" itemprop="dateModified" datetime="2019-03-01T10:49:58+08:00">2019-03-01</time>
+                <time title="Modified: 2019-03-01 03:49:58" itemprop="dateModified" datetime="2019-03-01T03:49:58+01:00">2019-03-01</time>
               
             
           </span>
@@ -1881,7 +1914,9 @@ import smtplib  import email.mime.multipart  import email.mime.textme = 'xxx@qq.
                     
                       
                     
-                    <span class="site-state-item-count">12</span>
+                      
+                    
+                    <span class="site-state-item-count">13</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
