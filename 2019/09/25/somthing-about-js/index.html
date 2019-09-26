@@ -99,14 +99,14 @@
   <meta name="description" content="0 干啥呢？最近要面试一个前端的岗位，正好复（yu）习（xi）一下相关的知识。其实我一直管自己叫“半吊子前端”，因为一直没有系统的学习过知识，而是用什么学什么。 1 JavaScript1.1 null vs. undefined vs. NaN1234567891011121314151617181920212223242526// undefined vs. null&amp;gt; undefine">
 <meta name="keywords" content="JavaScript,React,HTTP">
 <meta property="og:type" content="article">
-<meta property="og:title" content="cj land">
+<meta property="og:title" content="somthing about frontend">
 <meta property="og:url" content="https://cjhahaha.github.io/2019/09/25/somthing-about-js/index.html">
 <meta property="og:site_name" content="cj land">
 <meta property="og:description" content="0 干啥呢？最近要面试一个前端的岗位，正好复（yu）习（xi）一下相关的知识。其实我一直管自己叫“半吊子前端”，因为一直没有系统的学习过知识，而是用什么学什么。 1 JavaScript1.1 null vs. undefined vs. NaN1234567891011121314151617181920212223242526// undefined vs. null&amp;gt; undefine">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-09-25T16:36:08.323Z">
+<meta property="og:updated_time" content="2019-09-26T07:21:54.247Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="cj land">
+<meta name="twitter:title" content="somthing about frontend">
 <meta name="twitter:description" content="0 干啥呢？最近要面试一个前端的岗位，正好复（yu）习（xi）一下相关的知识。其实我一直管自己叫“半吊子前端”，因为一直没有系统的学习过知识，而是用什么学什么。 1 JavaScript1.1 null vs. undefined vs. NaN1234567891011121314151617181920212223242526// undefined vs. null&amp;gt; undefine">
 
 
@@ -124,7 +124,7 @@
   };
 </script>
 
-  <title> | cj land</title>
+  <title>somthing about frontend | cj land</title>
   
 
 
@@ -323,7 +323,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">somthing about frontend
 
               
             
@@ -366,7 +366,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-09-26 00:36:08" itemprop="dateModified" datetime="2019-09-26T00:36:08+08:00">2019-09-26</time>
+                <time title="Modified: 2019-09-26 15:21:54" itemprop="dateModified" datetime="2019-09-26T15:21:54+08:00">2019-09-26</time>
               
             
           </span>
@@ -417,8 +417,10 @@
 <li><code>[]</code></li>
 <li>…</li>
 </ul>
+<p>一些奇怪的情况。。。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="keyword">if</span> ([] == <span class="literal">false</span>) <span class="built_in">console</span>.log(<span class="string">'[] is false'</span>)</span><br><span class="line">[] is <span class="literal">false</span></span><br><span class="line">&gt; <span class="keyword">if</span> ([]) <span class="built_in">console</span>.log(<span class="string">'[] is true'</span>)</span><br><span class="line">[] is <span class="literal">true</span></span><br><span class="line"></span><br><span class="line">&gt; <span class="keyword">if</span> (&#123;&#125; == <span class="literal">false</span>) <span class="built_in">console</span>.log(<span class="string">'&#123;&#125; is false'</span>)</span><br><span class="line">&gt; <span class="keyword">if</span> (&#123;&#125;) <span class="built_in">console</span>.log(<span class="string">'&#123;&#125; is true'</span>)</span><br><span class="line">&#123;&#125; is <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 <h2 id="1-2-vs"><a href="#1-2-vs" class="headerlink" title="1.2 == vs. ==="></a>1.2 <code>==</code> vs. <code>===</code></h2><p><code>===</code> 会比较类型</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="number">1</span> == <span class="string">"1"</span></span><br><span class="line"><span class="literal">true</span></span><br><span class="line">&gt; <span class="number">1</span> === <span class="string">"1"</span></span><br><span class="line"><span class="literal">false</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="number">1</span> == <span class="string">"1"</span></span><br><span class="line"><span class="literal">true</span></span><br><span class="line">&gt; <span class="number">1</span> === <span class="string">"1"</span></span><br><span class="line"><span class="literal">false</span></span><br><span class="line">&gt; [<span class="number">1</span>] == [<span class="number">1</span>]</span><br><span class="line"><span class="literal">false</span></span><br></pre></td></tr></table></figure>
 <h2 id="1-3-void-运算符"><a href="#1-3-void-运算符" class="headerlink" title="1.3 void 运算符"></a>1.3 <code>void</code> 运算符</h2><p>是执行一个表达式，然后不返回任何值 / <code>return undefined</code></p>
 <h2 id="1-4-包装对象"><a href="#1-4-包装对象" class="headerlink" title="1.4 包装对象"></a>1.4 包装对象</h2><p>new一个<code>Number</code>、<code>String</code>、<code>Boolean</code>的话，会返回object</p>
 <p>不new直接赋值，不会</p>
@@ -427,12 +429,17 @@
 <li>全局，<code>this === window</code></li>
 <li>构造函数，对象</li>
 <li>对象的方法，有时候是该方法的上一级context，有时候是运行的context（e.g. window）</li>
+<li>listener里，指向触发的DOM节点</li>
+<li>箭头函数里，一直指向的是定义函数的环境</li>
 </ul>
-<p>如何指定函数内部<code>this</code>？</p>
-<h3 id="1-5-1-Function-prototype-call"><a href="#1-5-1-Function-prototype-call" class="headerlink" title="1.5.1 Function.prototype.call()"></a>1.5.1 <code>Function.prototype.call()</code></h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">func.call(thisValue, arg1, arg2, ...)</span><br></pre></td></tr></table></figure>
-<h4 id="1-5-2Function-prototype-apply"><a href="#1-5-2Function-prototype-apply" class="headerlink" title="1.5.2Function.prototype.apply()"></a>1.5.2<code>Function.prototype.apply()</code></h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">func.call(thisValue, [arg1, arg2, ...])</span><br></pre></td></tr></table></figure>
+<h3 id="1-5-1-Function-prototype-call"><a href="#1-5-1-Function-prototype-call" class="headerlink" title="1.5.1 Function.prototype.call()"></a>1.5.1 <code>Function.prototype.call()</code></h3><p>指定函数内部<code>this</code></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">func.call(thisValue, arg1, arg2, ...)</span><br></pre></td></tr></table></figure>
+<h4 id="1-5-2Function-prototype-apply"><a href="#1-5-2Function-prototype-apply" class="headerlink" title="1.5.2Function.prototype.apply()"></a>1.5.2<code>Function.prototype.apply()</code></h4><p>指定函数内部<code>this</code></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">func.call(thisValue, [arg1, arg2, ...])</span><br></pre></td></tr></table></figure>
 <h3 id="1-5-3-Function-prototype-bind"><a href="#1-5-3-Function-prototype-bind" class="headerlink" title="1.5.3 Function.prototype.bind()"></a>1.5.3 <code>Function.prototype.bind()</code></h3><p>将函数体内的<code>this</code>绑定到某个对象，然后返回一个新函数</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">func.bind(thisValue, arg1, arg2, ...)</span><br></pre></td></tr></table></figure>
+<p>手写<code>bind</code></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Function</span>.prototype.bind_2 = <span class="function"><span class="keyword">function</span> (<span class="params">thisValue</span>) </span>&#123;</span><br><span class="line">	<span class="keyword">let</span> that = <span class="keyword">this</span>;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> that.apply(thisValue, [...arguments])</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="1-6-prototype"><a href="#1-6-prototype" class="headerlink" title="1.6 prototype"></a>1.6 prototype</h2><p>类似C++类里的<code>static</code>。</p>
 <h2 id="1-7-39-use-strict-39"><a href="#1-7-39-use-strict-39" class="headerlink" title="1.7 &#39;use strict&#39;"></a>1.7 <code>&#39;use strict&#39;</code></h2><ol>
 <li>只读属性不可写</li>
@@ -444,8 +451,8 @@
 <li>禁止使用 with 语句</li>
 <li>创设 eval 作用域 </li>
 </ol>
-<h2 id="1-8-异步"><a href="#1-8-异步" class="headerlink" title="1.8 异步"></a>1.8 异步</h2><h3 id="1-8-1-事件循环-Event-Loop"><a href="#1-8-1-事件循环-Event-Loop" class="headerlink" title="1.8.1 事件循环 Event Loop"></a>1.8.1 事件循环 Event Loop</h3><p>为了检查异步任务是否执行完毕，引擎在不停地检查，一遍又一遍。只要同步任务执行完了，引擎就会去检查那些挂起来的异步任务。</p>
-<h3 id="1-8-2-操作模式"><a href="#1-8-2-操作模式" class="headerlink" title="1.8.2 操作模式"></a>1.8.2 操作模式</h3><ol>
+<h2 id="1-8-异步"><a href="#1-8-异步" class="headerlink" title="1.8 异步"></a>1.8 异步</h2><p>操作模式</p>
+<ol>
 <li><p>回调 callback </p>
 <p>cons: high coupling</p>
 </li>
@@ -454,14 +461,36 @@
 <li><p>observer pattern</p>
 </li>
 </ol>
-<h3 id="1-8-3-Promise"><a href="#1-8-3-Promise" class="headerlink" title="1.8.3 Promise"></a>1.8.3 Promise</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 传统写法</span></span><br><span class="line">step1(<span class="function"><span class="keyword">function</span> (<span class="params">value1</span>) </span>&#123;</span><br><span class="line">  step2(value1, <span class="function"><span class="keyword">function</span>(<span class="params">value2</span>) </span>&#123;</span><br><span class="line">    step3(value2, <span class="function"><span class="keyword">function</span>(<span class="params">value3</span>) </span>&#123;</span><br><span class="line">      step4(value3, <span class="function"><span class="keyword">function</span>(<span class="params">value4</span>) </span>&#123;</span><br><span class="line">        <span class="comment">// ...</span></span><br><span class="line">      &#125;);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// Promise 的写法</span></span><br><span class="line">(<span class="keyword">new</span> <span class="built_in">Promise</span>(step1))</span><br><span class="line">  .then(step2)</span><br><span class="line">  .then(step3)</span><br><span class="line">  .then(step4);</span><br></pre></td></tr></table></figure>
+<h3 id="1-8-1-Promise"><a href="#1-8-1-Promise" class="headerlink" title="1.8.1 Promise"></a>1.8.1 Promise</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 传统写法</span></span><br><span class="line">step1(<span class="function"><span class="keyword">function</span> (<span class="params">value1</span>) </span>&#123;</span><br><span class="line">  step2(value1, <span class="function"><span class="keyword">function</span>(<span class="params">value2</span>) </span>&#123;</span><br><span class="line">    step3(value2, <span class="function"><span class="keyword">function</span>(<span class="params">value3</span>) </span>&#123;</span><br><span class="line">      step4(value3, <span class="function"><span class="keyword">function</span>(<span class="params">value4</span>) </span>&#123;</span><br><span class="line">        <span class="comment">// ...</span></span><br><span class="line">      &#125;);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// Promise 的写法</span></span><br><span class="line">(<span class="keyword">new</span> <span class="built_in">Promise</span>(step1))</span><br><span class="line">  .then(step2)</span><br><span class="line">  .then(step3)</span><br><span class="line">  .then(step4);</span><br></pre></td></tr></table></figure>
 <p>promise 的状态</p>
 <ul>
 <li>异步操作未完成（pending）</li>
 <li>异步操作成功（fulfilled）</li>
 <li>异步操作失败（rejected） </li>
 </ul>
-<h1 id="2-DOM"><a href="#2-DOM" class="headerlink" title="2 DOM"></a>2 DOM</h1><h1 id="3-HTTP-and-HTTPS"><a href="#3-HTTP-and-HTTPS" class="headerlink" title="3 HTTP and HTTPS"></a>3 HTTP and HTTPS</h1><h2 id="3-1-POST-vs-GET"><a href="#3-1-POST-vs-GET" class="headerlink" title="3.1 POST vs. GET"></a>3.1 POST vs. GET</h2><ul>
+<h3 id="1-8-2-async-和-await"><a href="#1-8-2-async-和-await" class="headerlink" title="1.8.2 async 和 await"></a>1.8.2 <code>async</code> 和 <code>await</code></h3><p><code>await</code> 只能出现在 <code>async</code> 函数中，等待一个异步任务执行完成的的结果。</p>
+<p>举个例子，目前有个函数需要1s才能返回值。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">takeLongTime</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="params">resolve</span> =&gt;</span> &#123;</span><br><span class="line">        setTimeout(<span class="function"><span class="params">()</span> =&gt;</span> resolve(<span class="string">"long_time_value"</span>), <span class="number">1000</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>用promise写的话</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">takeLongTime().then(<span class="function"><span class="params">v</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"got"</span>, v);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>用<code>await</code>和<code>async</code>的话</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">const</span> v = <span class="keyword">await</span> takeLongTime();</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"got"</span>, v);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test();</span><br></pre></td></tr></table></figure>
+<h3 id="1-8-3-事件循环-Event-Loop"><a href="#1-8-3-事件循环-Event-Loop" class="headerlink" title="1.8.3 事件循环 Event Loop"></a>1.8.3 事件循环 Event Loop</h3><p>为了检查异步任务是否执行完毕，引擎在不停地检查，一遍又一遍。只要同步任务执行完了，引擎就会去检查那些挂起来的异步任务。 </p>
+<h2 id="1-9-new"><a href="#1-9-new" class="headerlink" title="1.9 new"></a>1.9 <code>new</code></h2><ol>
+<li>创建一个空对象，作为将要返回的对象实例</li>
+<li>将这个空对象的原型，指向构造函数的<code>prototype</code>属性</li>
+<li>将这个空对象赋值给函数内部的<code>this</code>关键字</li>
+<li>开始执行构造函数内部的代码</li>
+</ol>
+<h2 id="1-10-var、let、const"><a href="#1-10-var、let、const" class="headerlink" title="1.10 var、let、const"></a>1.10 <code>var</code>、<code>let</code>、<code>const</code></h2><h3 id="1-10-1-var"><a href="#1-10-1-var" class="headerlink" title="1.10.1 var"></a>1.10.1 <code>var</code></h3><p>变量提升</p>
+<h3 id="1-10-2-let"><a href="#1-10-2-let" class="headerlink" title="1.10.2 let"></a>1.10.2 <code>let</code></h3><p>块级作用域</p>
+<h3 id="1-10-3-const"><a href="#1-10-3-const" class="headerlink" title="1.10.3 const"></a>1.10.3 <code>const</code></h3><p> 块级作用域，obj可增加key、改value</p>
+<h2 id="1-12-TypeScript"><a href="#1-12-TypeScript" class="headerlink" title="1.12 TypeScript"></a>1.12 TypeScript</h2><p>超集、静态类型检查、函数参数缺省值</p>
+<h1 id="2-DOM"><a href="#2-DOM" class="headerlink" title="2 DOM"></a>2 DOM</h1><h2 id="2-1-brief"><a href="#2-1-brief" class="headerlink" title="2.1 brief"></a>2.1 brief</h2><p>DOM(Document Object Model)将网页转为一个 JavaScript 对象，从而可以用脚本进行各种操作（e.g. </p>
+<p>增删内容）。</p>
+<p>window &gt; document &gt; html &gt; body</p>
+<h2 id="2-2-Mutation-Observer"><a href="#2-2-Mutation-Observer" class="headerlink" title="2.2 Mutation Observer"></a>2.2 Mutation Observer</h2><p>异步触发检测DOM变化。</p>
+<h1 id="3-HTTP-and-HTTPS"><a href="#3-HTTP-and-HTTPS" class="headerlink" title="3 HTTP and HTTPS"></a>3 HTTP and HTTPS</h1><h2 id="3-1-POST-vs-GET"><a href="#3-1-POST-vs-GET" class="headerlink" title="3.1 POST vs. GET"></a>3.1 POST vs. GET</h2><ul>
 <li><p>GET把数据包含在URL中，POST通过request body传递数据</p>
 </li>
 <li><p>GET在浏览器回退时是无害的，POST会再次提交请求</p>
@@ -471,12 +500,81 @@
 <li><p>GET只接受ASCII字符，POST没有限制</p>
 </li>
 </ul>
+<h2 id="3-2-HTTP-缓存"><a href="#3-2-HTTP-缓存" class="headerlink" title="3.2 HTTP 缓存"></a>3.2 HTTP 缓存</h2><ul>
+<li>web缓存<ul>
+<li>数据库缓存</li>
+<li>服务器端缓存（代理服务器缓存、CDN 缓存）</li>
+<li>浏览器缓存<ul>
+<li>indexDB</li>
+<li>cookie</li>
+<li>localstorage</li>
+<li><strong>HTTP缓存</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>用户发起了一个<code>http</code>请求后，浏览器发现先本地已有所请求资源的缓存，便开始检查缓存是否过期。有两个http头部字段：<code>Expires</code>和<code>Cache-Control</code>，用于判定缓存是否过期。</p>
+<h2 id="3-3-HTTPS"><a href="#3-3-HTTPS" class="headerlink" title="3.3 HTTPS"></a>3.3 HTTPS</h2><p>== HTTP + SSL</p>
+<p>TLS(Transport Layer Security)</p>
+<ol>
+<li>查看缓存是否有<code>Cache-Control</code>的<code>s-maxage</code>或<code>max-age</code>指令，若有，则使用响应报文生成时间<code>Date + s-maxage/max-age</code>获得过期时间，再与当前时间进行对比（<code>s-maxage</code>适用于多用户使用的公共缓存服务器）；</li>
+<li>如果没有<code>Cache-Control</code>的<code>s-maxage</code>或<code>max-age</code>指令，则比较<code>Expires</code>中的过期时间与当前时间。<code>Expires</code>是一个绝对时间。</li>
+</ol>
 <h1 id="4-其他"><a href="#4-其他" class="headerlink" title="4 其他"></a>4 其他</h1><h2 id="4-1-函数防抖（debounce）-vs-函数节流（throttle）"><a href="#4-1-函数防抖（debounce）-vs-函数节流（throttle）" class="headerlink" title="4.1 函数防抖（debounce） vs. 函数节流（throttle）"></a>4.1 函数防抖（debounce） vs. 函数节流（throttle）</h2><h3 id="4-1-1-函数防抖"><a href="#4-1-1-函数防抖" class="headerlink" title="4.1.1 函数防抖"></a>4.1.1 函数防抖</h3><h4 id="4-1-1-1-brief"><a href="#4-1-1-1-brief" class="headerlink" title="4.1.1.1 brief"></a>4.1.1.1 brief</h4><p>连续触发只执行最后一次。</p>
 <h4 id="4-1-1-2-scenario"><a href="#4-1-1-2-scenario" class="headerlink" title="4.1.1.2 scenario"></a>4.1.1.2 scenario</h4><p>resize、正则验证</p>
 <h4 id="4-1-1-3-implementation"><a href="#4-1-1-3-implementation" class="headerlink" title="4.1.1.3 implementation"></a>4.1.1.3 implementation</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> debounce = <span class="function">(<span class="params">func, wait</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">let</span> timer;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">    clearTimeout(timer);</span><br><span class="line">    timer = setTimeout(func, wait);</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <h3 id="4-1-2-函数节流"><a href="#4-1-2-函数节流" class="headerlink" title="4.1.2 函数节流"></a>4.1.2 函数节流</h3><h4 id="4-1-2-1-brief"><a href="#4-1-2-1-brief" class="headerlink" title="4.1.2.1 .brief"></a>4.1.2.1 .brief</h4><p>限制一定时间内只能执行一次。</p>
 <h4 id="4-1-2-2-scenario"><a href="#4-1-2-2-scenario" class="headerlink" title="4.1.2.2 scenario"></a>4.1.2.2 scenario</h4><p>滚动加载、搜索联想、表单提交</p>
 <h4 id="4-1-2-3-implementation"><a href="#4-1-2-3-implementation" class="headerlink" title="4.1.2.3 implementation"></a>4.1.2.3 implementation</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> throttle = <span class="function">(<span class="params">func, wait</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">let</span> timer;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (timer) &#123; <span class="keyword">return</span>; &#125;</span><br><span class="line">    </span><br><span class="line">    timer = setTimeout(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">      func();</span><br><span class="line">      timer = <span class="literal">null</span>;</span><br><span class="line">    &#125;, wait);</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h2 id="4-2-React"><a href="#4-2-React" class="headerlink" title="4.2 React"></a>4.2 React</h2><h3 id="4-2-1-组件生命周期"><a href="#4-2-1-组件生命周期" class="headerlink" title="4.2.1 组件生命周期"></a>4.2.1 组件生命周期</h3><ul>
+<li><strong>componentWillMount</strong> 在渲染前调用,在客户端也在服务端。</li>
+<li><strong>componentDidMount</strong> : 在第一次渲染后调用，只在客户端。之后组件已经生成了对应的DOM结构，可以通过this.getDOMNode()来进行访问。 如果你想和其他JavaScript框架一起使用，可以在这个方法中调用setTimeout, setInterval或者发送AJAX请求等操作(防止异步操作阻塞UI)。</li>
+<li><strong>componentWillReceiveProps</strong> 在组件接收到一个新的 prop (更新后)时被调用。这个方法在初始化render时不会被调用。</li>
+<li><strong>shouldComponentUpdate</strong> 返回一个布尔值。在组件接收到新的props或者state时被调用。在初始化时或者使用forceUpdate时不被调用。<br>可以在你确认不需要更新组件时使用。</li>
+<li><strong>componentWillUpdate</strong>在组件接收到新的props或者state但还没有render时被调用。在初始化时不会被调用。</li>
+<li><strong>componentDidUpdate</strong> 在组件完成更新后立即调用。在初始化时不会被调用。</li>
+<li><strong>componentWillUnmount</strong>在组件从 DOM 中移除之前立刻被调用。</li>
+</ul>
+<h3 id="4-2-2-why-虚拟-dom"><a href="#4-2-2-why-虚拟-dom" class="headerlink" title="4.2.2 why 虚拟 dom"></a>4.2.2 why 虚拟 dom</h3><p>虚拟 dom 相当于在 js 和真实 dom 中间加了一个缓存，利用 dom diff 算法避免了没有必要的 dom 操作，从而提高性能。</p>
+<p>用 JavaScript 对象结构表示 DOM 树的结构；然后用这个树构建一个真正的 DOM 树，插到文档当中当状态变更的时候，重新构造一棵新的对象树。然后用新的树和旧的树进行比较，记录两棵树差异把 2 所记录的差异应用到步骤 1 所构建的真正的 DOM 树上，视图就更新了。</p>
+<h1 id="4-3-CORS-通信"><a href="#4-3-CORS-通信" class="headerlink" title="4.3 CORS 通信"></a>4.3 CORS 通信</h1><p>“跨域资源共享”（Cross-origin resource sharing）</p>
+<p>跨域：协议 + 域名 + 端口</p>
+<p>通过header中的access-control-*字段实现</p>
+<h2 id="4-4-Cookie、Session和LocalStorage"><a href="#4-4-Cookie、Session和LocalStorage" class="headerlink" title="4.4 Cookie、Session和LocalStorage"></a>4.4 Cookie、Session和LocalStorage</h2><h3 id="4-4-1-cookie"><a href="#4-4-1-cookie" class="headerlink" title="4.4.1 cookie"></a>4.4.1 cookie</h3><ul>
+<li>在本地</li>
+<li>不安全，可以欺骗</li>
+<li>4kb</li>
+<li>存的有sessionID</li>
+<li>路径限制</li>
+</ul>
+<h3 id="4-4-2-session"><a href="#4-4-2-session" class="headerlink" title="4.4.2 session"></a>4.4.2 session</h3><ul>
+<li>在服务器</li>
+<li><p>没有大小限制</p>
+</li>
+<li><p>不同页面共享</p>
+</li>
+</ul>
+<h3 id="4-4-3-LocalStorage"><a href="#4-4-3-LocalStorage" class="headerlink" title="4.4.3 LocalStorage"></a>4.4.3 LocalStorage</h3><ul>
+<li>html5 不用cookie改用 LocalStorage</li>
+<li>WebStorage（本地）<ul>
+<li>SessionStorage（浏览器关闭消失）</li>
+<li><strong>LocalStorage</strong>（浏览器关闭不消失）</li>
+</ul>
+</li>
+<li>5MB</li>
+</ul>
+<h1 id="5-HTML"><a href="#5-HTML" class="headerlink" title="5 HTML"></a>5 HTML</h1><h2 id="5-1-lt-meta-gt"><a href="#5-1-lt-meta-gt" class="headerlink" title="5.1 &lt;meta&gt;"></a>5.1 <code>&lt;meta&gt;</code></h2><p><code>&lt;meta&gt;</code>元素可提供有关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词，键值对存储。</p>
+<h2 id="5-2-HTML5"><a href="#5-2-HTML5" class="headerlink" title="5.2 HTML5"></a>5.2 HTML5</h2><p>新标签</p>
+<ul>
+<li><code>&lt;canvas&gt;</code></li>
+<li><code>&lt;audio&gt;</code>, <code>&lt;video&gt;</code>, <code>&lt;source&gt;</code>, <code>&lt;embed&gt;</code></li>
+<li><code>&lt;footer&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code></li>
+</ul>
+<h1 id="6-CSS"><a href="#6-CSS" class="headerlink" title="6 CSS"></a>6 CSS</h1><h2 id="6-1-水平垂直居中"><a href="#6-1-水平垂直居中" class="headerlink" title="6.1 水平垂直居中"></a>6.1 水平垂直居中</h2><p>css3很显然用<code>flex</code>最简单</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">  justify-content: center; // 主轴方向，此处为row(default)</span><br><span class="line">  align-item: center;      // 另一个轴</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>用<code>transform</code>，<code>translate</code>向各轴移动该侧长度的百分比</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.center</span>&#123;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">left</span>: <span class="number">50%</span>;</span><br><span class="line">  <span class="attribute">top</span>: <span class="number">50%</span>;</span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">translate</span>(-50%,-50%);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -693,7 +791,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#0-干啥呢？"><span class="nav-number">1.</span> <span class="nav-text">0 干啥呢？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#1-JavaScript"><span class="nav-number">2.</span> <span class="nav-text">1 JavaScript</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-null-vs-undefined-vs-NaN"><span class="nav-number">2.1.</span> <span class="nav-text">1.1 null vs. undefined vs. NaN</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2-vs"><span class="nav-number">2.2.</span> <span class="nav-text">1.2 == vs. ===</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-3-void-运算符"><span class="nav-number">2.3.</span> <span class="nav-text">1.3 void 运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-4-包装对象"><span class="nav-number">2.4.</span> <span class="nav-text">1.4 包装对象</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-5-this"><span class="nav-number">2.5.</span> <span class="nav-text">1.5 this</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-5-1-Function-prototype-call"><span class="nav-number">2.5.1.</span> <span class="nav-text">1.5.1 Function.prototype.call()</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-5-2Function-prototype-apply"><span class="nav-number">2.5.1.1.</span> <span class="nav-text">1.5.2Function.prototype.apply()</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-5-3-Function-prototype-bind"><span class="nav-number">2.5.2.</span> <span class="nav-text">1.5.3 Function.prototype.bind()</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-6-prototype"><span class="nav-number">2.6.</span> <span class="nav-text">1.6 prototype</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-7-39-use-strict-39"><span class="nav-number">2.7.</span> <span class="nav-text">1.7 &#39;use strict&#39;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-8-异步"><span class="nav-number">2.8.</span> <span class="nav-text">1.8 异步</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-8-1-事件循环-Event-Loop"><span class="nav-number">2.8.1.</span> <span class="nav-text">1.8.1 事件循环 Event Loop</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-8-2-操作模式"><span class="nav-number">2.8.2.</span> <span class="nav-text">1.8.2 操作模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-8-3-Promise"><span class="nav-number">2.8.3.</span> <span class="nav-text">1.8.3 Promise</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-DOM"><span class="nav-number">3.</span> <span class="nav-text">2 DOM</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-HTTP-and-HTTPS"><span class="nav-number">4.</span> <span class="nav-text">3 HTTP and HTTPS</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1-POST-vs-GET"><span class="nav-number">4.1.</span> <span class="nav-text">3.1 POST vs. GET</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-其他"><span class="nav-number">5.</span> <span class="nav-text">4 其他</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-1-函数防抖（debounce）-vs-函数节流（throttle）"><span class="nav-number">5.1.</span> <span class="nav-text">4.1 函数防抖（debounce） vs. 函数节流（throttle）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-1-函数防抖"><span class="nav-number">5.1.1.</span> <span class="nav-text">4.1.1 函数防抖</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-1-1-1-brief"><span class="nav-number">5.1.1.1.</span> <span class="nav-text">4.1.1.1 brief</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-1-1-2-scenario"><span class="nav-number">5.1.1.2.</span> <span class="nav-text">4.1.1.2 scenario</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-1-1-3-implementation"><span class="nav-number">5.1.1.3.</span> <span class="nav-text">4.1.1.3 implementation</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-2-函数节流"><span class="nav-number">5.1.2.</span> <span class="nav-text">4.1.2 函数节流</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-1-2-1-brief"><span class="nav-number">5.1.2.1.</span> <span class="nav-text">4.1.2.1 .brief</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-1-2-2-scenario"><span class="nav-number">5.1.2.2.</span> <span class="nav-text">4.1.2.2 scenario</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-1-2-3-implementation"><span class="nav-number">5.1.2.3.</span> <span class="nav-text">4.1.2.3 implementation</span></a></li></ol></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#0-干啥呢？"><span class="nav-number">1.</span> <span class="nav-text">0 干啥呢？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#1-JavaScript"><span class="nav-number">2.</span> <span class="nav-text">1 JavaScript</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-null-vs-undefined-vs-NaN"><span class="nav-number">2.1.</span> <span class="nav-text">1.1 null vs. undefined vs. NaN</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2-vs"><span class="nav-number">2.2.</span> <span class="nav-text">1.2 == vs. ===</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-3-void-运算符"><span class="nav-number">2.3.</span> <span class="nav-text">1.3 void 运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-4-包装对象"><span class="nav-number">2.4.</span> <span class="nav-text">1.4 包装对象</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-5-this"><span class="nav-number">2.5.</span> <span class="nav-text">1.5 this</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-5-1-Function-prototype-call"><span class="nav-number">2.5.1.</span> <span class="nav-text">1.5.1 Function.prototype.call()</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-5-2Function-prototype-apply"><span class="nav-number">2.5.1.1.</span> <span class="nav-text">1.5.2Function.prototype.apply()</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-5-3-Function-prototype-bind"><span class="nav-number">2.5.2.</span> <span class="nav-text">1.5.3 Function.prototype.bind()</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-6-prototype"><span class="nav-number">2.6.</span> <span class="nav-text">1.6 prototype</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-7-39-use-strict-39"><span class="nav-number">2.7.</span> <span class="nav-text">1.7 &#39;use strict&#39;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-8-异步"><span class="nav-number">2.8.</span> <span class="nav-text">1.8 异步</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-8-1-Promise"><span class="nav-number">2.8.1.</span> <span class="nav-text">1.8.1 Promise</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-8-2-async-和-await"><span class="nav-number">2.8.2.</span> <span class="nav-text">1.8.2 async 和 await</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-8-3-事件循环-Event-Loop"><span class="nav-number">2.8.3.</span> <span class="nav-text">1.8.3 事件循环 Event Loop</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-9-new"><span class="nav-number">2.9.</span> <span class="nav-text">1.9 new</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-10-var、let、const"><span class="nav-number">2.10.</span> <span class="nav-text">1.10 var、let、const</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-10-1-var"><span class="nav-number">2.10.1.</span> <span class="nav-text">1.10.1 var</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-10-2-let"><span class="nav-number">2.10.2.</span> <span class="nav-text">1.10.2 let</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-10-3-const"><span class="nav-number">2.10.3.</span> <span class="nav-text">1.10.3 const</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-12-TypeScript"><span class="nav-number">2.11.</span> <span class="nav-text">1.12 TypeScript</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-DOM"><span class="nav-number">3.</span> <span class="nav-text">2 DOM</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-brief"><span class="nav-number">3.1.</span> <span class="nav-text">2.1 brief</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-Mutation-Observer"><span class="nav-number">3.2.</span> <span class="nav-text">2.2 Mutation Observer</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-HTTP-and-HTTPS"><span class="nav-number">4.</span> <span class="nav-text">3 HTTP and HTTPS</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1-POST-vs-GET"><span class="nav-number">4.1.</span> <span class="nav-text">3.1 POST vs. GET</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-2-HTTP-缓存"><span class="nav-number">4.2.</span> <span class="nav-text">3.2 HTTP 缓存</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-3-HTTPS"><span class="nav-number">4.3.</span> <span class="nav-text">3.3 HTTPS</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-其他"><span class="nav-number">5.</span> <span class="nav-text">4 其他</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-1-函数防抖（debounce）-vs-函数节流（throttle）"><span class="nav-number">5.1.</span> <span class="nav-text">4.1 函数防抖（debounce） vs. 函数节流（throttle）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-1-函数防抖"><span class="nav-number">5.1.1.</span> <span class="nav-text">4.1.1 函数防抖</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-1-1-1-brief"><span class="nav-number">5.1.1.1.</span> <span class="nav-text">4.1.1.1 brief</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-1-1-2-scenario"><span class="nav-number">5.1.1.2.</span> <span class="nav-text">4.1.1.2 scenario</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-1-1-3-implementation"><span class="nav-number">5.1.1.3.</span> <span class="nav-text">4.1.1.3 implementation</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-2-函数节流"><span class="nav-number">5.1.2.</span> <span class="nav-text">4.1.2 函数节流</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-1-2-1-brief"><span class="nav-number">5.1.2.1.</span> <span class="nav-text">4.1.2.1 .brief</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-1-2-2-scenario"><span class="nav-number">5.1.2.2.</span> <span class="nav-text">4.1.2.2 scenario</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-1-2-3-implementation"><span class="nav-number">5.1.2.3.</span> <span class="nav-text">4.1.2.3 implementation</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2-React"><span class="nav-number">5.2.</span> <span class="nav-text">4.2 React</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-1-组件生命周期"><span class="nav-number">5.2.1.</span> <span class="nav-text">4.2.1 组件生命周期</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-2-why-虚拟-dom"><span class="nav-number">5.2.2.</span> <span class="nav-text">4.2.2 why 虚拟 dom</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-3-CORS-通信"><span class="nav-number">6.</span> <span class="nav-text">4.3 CORS 通信</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-4-Cookie、Session和LocalStorage"><span class="nav-number">6.1.</span> <span class="nav-text">4.4 Cookie、Session和LocalStorage</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-4-1-cookie"><span class="nav-number">6.1.1.</span> <span class="nav-text">4.4.1 cookie</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-4-2-session"><span class="nav-number">6.1.2.</span> <span class="nav-text">4.4.2 session</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-4-3-LocalStorage"><span class="nav-number">6.1.3.</span> <span class="nav-text">4.4.3 LocalStorage</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-HTML"><span class="nav-number">7.</span> <span class="nav-text">5 HTML</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#5-1-lt-meta-gt"><span class="nav-number">7.1.</span> <span class="nav-text">5.1 &lt;meta&gt;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-2-HTML5"><span class="nav-number">7.2.</span> <span class="nav-text">5.2 HTML5</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#6-CSS"><span class="nav-number">8.</span> <span class="nav-text">6 CSS</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#6-1-水平垂直居中"><span class="nav-number">8.1.</span> <span class="nav-text">6.1 水平垂直居中</span></a></li></ol></li></ol></div>
             
 
           </div>
