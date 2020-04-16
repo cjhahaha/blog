@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="ubuntu 16.04安装和配置shadowsocks install12# 需要python3 和 python3-pip 哦pip3 install shadowsocks configuration随便找个地方1vim shadowsocks.json 编辑内容如下123456789&amp;#123;	&quot;server&quot;: &quot;你的服务器IP&quot;	&quot;server_port&quot;: 8389,#你要开放的接">
+  <meta name="description" content="ubuntu 16.04 安装和配置 shadowsocks install12345678pip3 install --upgrade setuptoolspip3 install shadowsocks# install nginxapt install nginx -y# install gitapt install git -y config写了一段脚本来自动生成 config123456">
 <meta name="keywords" content="computer network">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ss set up | 安装ss">
 <meta property="og:url" content="https://cjhahaha.github.io/2018/05/06/ss/index.html">
 <meta property="og:site_name" content="cj land">
-<meta property="og:description" content="ubuntu 16.04安装和配置shadowsocks install12# 需要python3 和 python3-pip 哦pip3 install shadowsocks configuration随便找个地方1vim shadowsocks.json 编辑内容如下123456789&amp;#123;	&quot;server&quot;: &quot;你的服务器IP&quot;	&quot;server_port&quot;: 8389,#你要开放的接">
+<meta property="og:description" content="ubuntu 16.04 安装和配置 shadowsocks install12345678pip3 install --upgrade setuptoolspip3 install shadowsocks# install nginxapt install nginx -y# install gitapt install git -y config写了一段脚本来自动生成 config123456">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-01T02:52:11.214Z">
+<meta property="og:updated_time" content="2020-04-16T10:53:14.430Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ss set up | 安装ss">
-<meta name="twitter:description" content="ubuntu 16.04安装和配置shadowsocks install12# 需要python3 和 python3-pip 哦pip3 install shadowsocks configuration随便找个地方1vim shadowsocks.json 编辑内容如下123456789&amp;#123;	&quot;server&quot;: &quot;你的服务器IP&quot;	&quot;server_port&quot;: 8389,#你要开放的接">
+<meta name="twitter:description" content="ubuntu 16.04 安装和配置 shadowsocks install12345678pip3 install --upgrade setuptoolspip3 install shadowsocks# install nginxapt install nginx -y# install gitapt install git -y config写了一段脚本来自动生成 config123456">
 
 
 
@@ -366,7 +366,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-03-01 10:52:11" itemprop="dateModified" datetime="2019-03-01T10:52:11+08:00">2019-03-01</time>
+                <time title="Modified: 2020-04-16 18:53:14" itemprop="dateModified" datetime="2020-04-16T18:53:14+08:00">2020-04-16</time>
               
             
           </span>
@@ -418,10 +418,9 @@
       
 
       
-        <p>ubuntu 16.04安装和配置shadowsocks</p>
-<h2 id="install"><a href="#install" class="headerlink" title="install"></a>install</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 需要python3 和 python3-pip 哦</span></span><br><span class="line">pip3 install shadowsocks</span><br></pre></td></tr></table></figure>
-<h2 id="configuration"><a href="#configuration" class="headerlink" title="configuration"></a>configuration</h2><p>随便找个地方<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim shadowsocks.json</span><br></pre></td></tr></table></figure></p>
-<p>编辑内容如下<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	<span class="attr">"server"</span>: <span class="string">"你的服务器IP"</span></span><br><span class="line">	"server_port": 8389,#你要开放的接口</span><br><span class="line">	"password": "密码",</span><br><span class="line">	"timeout": 300,</span><br><span class="line">	"method":"aes-256-cfb",</span><br><span class="line">	"fast_open": true,</span><br><span class="line">	"workers": 1</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+        <p>ubuntu 16.04 安装和配置 shadowsocks</p>
+<h2 id="install"><a href="#install" class="headerlink" title="install"></a>install</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">pip3 install --upgrade setuptools</span><br><span class="line">pip3 install shadowsocks</span><br><span class="line"></span><br><span class="line"><span class="comment"># install nginx</span></span><br><span class="line">apt install nginx -y</span><br><span class="line"></span><br><span class="line"><span class="comment"># install git</span></span><br><span class="line">apt install git -y</span><br></pre></td></tr></table></figure>
+<h2 id="config"><a href="#config" class="headerlink" title="config"></a>config</h2><p>写了一段脚本来自动生成 config<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># get ip</span></span><br><span class="line">ip=$(ifconfig | grep inet | grep broadcast | awk <span class="string">'&#123;print $2&#125;'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># generate port</span></span><br><span class="line">port=`expr <span class="variable">$RANDOM</span> % 1000 + 8000`</span><br><span class="line"></span><br><span class="line"><span class="comment"># generate password</span></span><br><span class="line">apt install -y openssl</span><br><span class="line"><span class="built_in">pwd</span>=$(openssl rand -base64 16)</span><br><span class="line"></span><br><span class="line"><span class="comment"># write conf file</span></span><br><span class="line">conf=<span class="string">".ss-conf.json"</span></span><br><span class="line">rm <span class="variable">$conf</span></span><br><span class="line">touch <span class="variable">$conf</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"&#123;"</span> &gt;&gt; <span class="variable">$conf</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"  \"server\": \"<span class="variable">$ip</span>\","</span> &gt;&gt; <span class="variable">$conf</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"  \"server_port\": <span class="variable">$port</span>,"</span> &gt;&gt; <span class="variable">$conf</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"  \"password\": \"<span class="variable">$pwd</span>\","</span> &gt;&gt; <span class="variable">$conf</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"  \"timeout\": 300,"</span> &gt;&gt; <span class="variable">$conf</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"  \"fast_open\": false,"</span> &gt;&gt; <span class="variable">$conf</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"  \"worker\": 1"</span> &gt;&gt; <span class="variable">$conf</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"&#125;"</span> &gt;&gt; <span class="variable">$conf</span></span><br><span class="line"></span><br><span class="line">tail <span class="variable">$conf</span></span><br></pre></td></tr></table></figure></p>
 <h2 id="run"><a href="#run" class="headerlink" title="run"></a>run</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nohup ssserver -c ~/.ss/shadowsocks.json -d start &amp;</span><br></pre></td></tr></table></figure>
 
       
@@ -540,7 +539,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -586,7 +585,13 @@
                     
                       
                     
-                    <span class="site-state-item-count">9</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">12</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
@@ -635,7 +640,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#install"><span class="nav-number">1.</span> <span class="nav-text">install</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#configuration"><span class="nav-number">2.</span> <span class="nav-text">configuration</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#run"><span class="nav-number">3.</span> <span class="nav-text">run</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#install"><span class="nav-number">1.</span> <span class="nav-text">install</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#config"><span class="nav-number">2.</span> <span class="nav-text">config</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#run"><span class="nav-number">3.</span> <span class="nav-text">run</span></a></li></ol></div>
             
 
           </div>
