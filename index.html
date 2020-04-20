@@ -534,7 +534,7 @@ ANTLR 有一
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2020-04-15 12:16:53" itemprop="dateModified" datetime="2020-04-15T12:16:53+08:00">2020-04-15</time>
+                <time title="Modified: 2020-04-20 11:29:33" itemprop="dateModified" datetime="2020-04-20T11:29:33+08:00">2020-04-20</time>
               
             
           </span>
@@ -572,10 +572,16 @@ ANTLR 有一
           
             <p>
               intro工作了一小段时间，前两天被 git 折磨的毫无气焰，就此总结总结吧。
-冲突之前没怎么遇到过 merge conflicts，一遇到就怕的要死，甚至会重新 clone 一份然后再把改变手动加进去 ∠( ᐛ 」∠)＿，想想当时可真是太天真了。
-那么现在就来说说怎么处理  merge conflicts 吧。
-// TODO
-骚操作们git stashgit cherry-pickgit rebase// TODO
+scenario重做 commit背景每次开发一个新的功能，需要从 master 分支切一个 feat 分支，在 feat 分支上开发完成后，再 merge 到 master。
+假设你切错了分支，在一个脏分支上做了一些 commit。你需要把这些 commit 重做到干净的分支上。应该怎么办？
+解决方案
+重做一个 commitgit cherry-pick
+
+重做一段 commitgit rebase
+
+
+暂存背景当前分支有不想 commit 的改动，但有需要切换到别的分支。
+解决方案git stash
 
               
             </p>

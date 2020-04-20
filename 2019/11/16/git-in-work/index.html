@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="intro工作了一小段时间，前两天被 git 折磨的毫无气焰，就此总结总结吧。 冲突之前没怎么遇到过 merge conflicts，一遇到就怕的要死，甚至会重新 clone 一份然后再把改变手动加进去 ∠( ᐛ 」∠)＿，想想当时可真是太天真了。 那么现在就来说说怎么处理  merge conflicts 吧。 // TODO 骚操作们git stashgit cherry-pickgit re">
+  <meta name="description" content="intro工作了一小段时间，前两天被 git 折磨的毫无气焰，就此总结总结吧。 scenario重做 commit背景每次开发一个新的功能，需要从 master 分支切一个 feat 分支，在 feat 分支上开发完成后，再 merge 到 master。 假设你切错了分支，在一个脏分支上做了一些 commit。你需要把这些 commit 重做到干净的分支上。应该怎么办？ 解决方案 重做一个 co">
 <meta name="keywords" content="git">
 <meta property="og:type" content="article">
 <meta property="og:title" content="⏳ git-in-work">
 <meta property="og:url" content="https://cjhahaha.github.io/2019/11/16/git-in-work/index.html">
 <meta property="og:site_name" content="cj land">
-<meta property="og:description" content="intro工作了一小段时间，前两天被 git 折磨的毫无气焰，就此总结总结吧。 冲突之前没怎么遇到过 merge conflicts，一遇到就怕的要死，甚至会重新 clone 一份然后再把改变手动加进去 ∠( ᐛ 」∠)＿，想想当时可真是太天真了。 那么现在就来说说怎么处理  merge conflicts 吧。 // TODO 骚操作们git stashgit cherry-pickgit re">
+<meta property="og:description" content="intro工作了一小段时间，前两天被 git 折磨的毫无气焰，就此总结总结吧。 scenario重做 commit背景每次开发一个新的功能，需要从 master 分支切一个 feat 分支，在 feat 分支上开发完成后，再 merge 到 master。 假设你切错了分支，在一个脏分支上做了一些 commit。你需要把这些 commit 重做到干净的分支上。应该怎么办？ 解决方案 重做一个 co">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2020-04-15T04:16:53.353Z">
+<meta property="og:updated_time" content="2020-04-20T03:29:33.651Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="⏳ git-in-work">
-<meta name="twitter:description" content="intro工作了一小段时间，前两天被 git 折磨的毫无气焰，就此总结总结吧。 冲突之前没怎么遇到过 merge conflicts，一遇到就怕的要死，甚至会重新 clone 一份然后再把改变手动加进去 ∠( ᐛ 」∠)＿，想想当时可真是太天真了。 那么现在就来说说怎么处理  merge conflicts 吧。 // TODO 骚操作们git stashgit cherry-pickgit re">
+<meta name="twitter:description" content="intro工作了一小段时间，前两天被 git 折磨的毫无气焰，就此总结总结吧。 scenario重做 commit背景每次开发一个新的功能，需要从 master 分支切一个 feat 分支，在 feat 分支上开发完成后，再 merge 到 master。 假设你切错了分支，在一个脏分支上做了一些 commit。你需要把这些 commit 重做到干净的分支上。应该怎么办？ 解决方案 重做一个 co">
 
 
 
@@ -366,7 +366,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2020-04-15 12:16:53" itemprop="dateModified" datetime="2020-04-15T12:16:53+08:00">2020-04-15</time>
+                <time title="Modified: 2020-04-20 11:29:33" itemprop="dateModified" datetime="2020-04-20T11:29:33+08:00">2020-04-20</time>
               
             
           </span>
@@ -400,11 +400,17 @@
       
 
       
-        <h2 id="intro"><a href="#intro" class="headerlink" title="intro"></a>intro</h2><p>工作了一小段时间，前两天被 git 折磨的毫无气焰，就此总结总结吧。</p>
-<h2 id="冲突"><a href="#冲突" class="headerlink" title="冲突"></a>冲突</h2><p>之前没怎么遇到过 merge conflicts，一遇到就怕的要死，甚至会重新 clone 一份然后再把改变手动加进去 ∠( ᐛ 」∠)＿，想想当时可真是太天真了。</p>
-<p>那么现在就来说说怎么处理  merge conflicts 吧。</p>
-<p>// TODO</p>
-<h2 id="骚操作们"><a href="#骚操作们" class="headerlink" title="骚操作们"></a>骚操作们</h2><h3 id="git-stash"><a href="#git-stash" class="headerlink" title="git stash"></a><code>git stash</code></h3><h3 id="git-cherry-pick"><a href="#git-cherry-pick" class="headerlink" title="git cherry-pick"></a><code>git cherry-pick</code></h3><h3 id="git-rebase"><a href="#git-rebase" class="headerlink" title="git rebase"></a><code>git rebase</code></h3><p>// TODO</p>
+        <h1 id="intro"><a href="#intro" class="headerlink" title="intro"></a>intro</h1><p>工作了一小段时间，前两天被 git 折磨的毫无气焰，就此总结总结吧。</p>
+<h1 id="scenario"><a href="#scenario" class="headerlink" title="scenario"></a>scenario</h1><h2 id="重做-commit"><a href="#重做-commit" class="headerlink" title="重做 commit"></a>重做 commit</h2><h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>每次开发一个新的功能，需要从 master 分支切一个 feat 分支，在 feat 分支上开发完成后，再 merge 到 master。</p>
+<h3 id="假设"><a href="#假设" class="headerlink" title="假设"></a>假设</h3><p>你切错了分支，在一个脏分支上做了一些 commit。你需要把这些 commit 重做到干净的分支上。应该怎么办？</p>
+<h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><ol>
+<li><p>重做一个 commit<br><code>git cherry-pick</code></p>
+</li>
+<li><p>重做一段 commit<br><code>git rebase</code></p>
+</li>
+</ol>
+<h2 id="暂存"><a href="#暂存" class="headerlink" title="暂存"></a>暂存</h2><h3 id="背景-1"><a href="#背景-1" class="headerlink" title="背景"></a>背景</h3><p>当前分支有不想 commit 的改动，但有需要切换到别的分支。</p>
+<h3 id="解决方案-1"><a href="#解决方案-1" class="headerlink" title="解决方案"></a>解决方案</h3><p><code>git stash</code></p>
 
       
     </div>
@@ -623,7 +629,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#intro"><span class="nav-number">1.</span> <span class="nav-text">intro</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#冲突"><span class="nav-number">2.</span> <span class="nav-text">冲突</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#骚操作们"><span class="nav-number">3.</span> <span class="nav-text">骚操作们</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#git-stash"><span class="nav-number">3.1.</span> <span class="nav-text">git stash</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#git-cherry-pick"><span class="nav-number">3.2.</span> <span class="nav-text">git cherry-pick</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#git-rebase"><span class="nav-number">3.3.</span> <span class="nav-text">git rebase</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#intro"><span class="nav-number">1.</span> <span class="nav-text">intro</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#scenario"><span class="nav-number">2.</span> <span class="nav-text">scenario</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#重做-commit"><span class="nav-number">2.1.</span> <span class="nav-text">重做 commit</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#背景"><span class="nav-number">2.1.1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#假设"><span class="nav-number">2.1.2.</span> <span class="nav-text">假设</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决方案"><span class="nav-number">2.1.3.</span> <span class="nav-text">解决方案</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#暂存"><span class="nav-number">2.2.</span> <span class="nav-text">暂存</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#背景-1"><span class="nav-number">2.2.1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决方案-1"><span class="nav-number">2.2.2.</span> <span class="nav-text">解决方案</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
