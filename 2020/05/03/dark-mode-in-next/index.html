@@ -108,25 +108,25 @@
 
 
 
-  <meta name="description" content="想在mac下安装oracle？so easy！虽然oracle在os X下并没有release，但是有了docker我们可以轻松实现。 安装docker参考这个 在docker里安装Oracle 先下载oracle的image 1docker pull wnameless/oracle-xe-11g  运行并开放窗口 1docker run -d -p 49160:22 -p 49161:1521">
-<meta name="keywords" content="docker,oracle">
+  <meta name="description" content="是时候让你的 hexo 博客支持 dark mode 了！ 原理简单粗暴的 dark mode 实现方案CSS 支持了滤镜 filter，可以用来改变颜色。那么最简单 dark mode 不如用“将整个页面反色”实现。下面一句话搞定：123html &amp;#123;	filter: invert(100%);&amp;#125; 但是这样子的话会导致图片也被反色，就会很诡异。💡 顺着这个简单的思路，那么把图">
+<meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="install oracle on Mac os X | mac下oracle的最佳实践">
-<meta property="og:url" content="https://blog.keyi-li.com/2018/04/11/mac-oracle/index.html">
+<meta property="og:title" content="让你的 hexo next 主题支持 dark mode">
+<meta property="og:url" content="https://blog.keyi-li.com/2020/05/03/dark-mode-in-next/index.html">
 <meta property="og:site_name" content="k&#39;s blog">
-<meta property="og:description" content="想在mac下安装oracle？so easy！虽然oracle在os X下并没有release，但是有了docker我们可以轻松实现。 安装docker参考这个 在docker里安装Oracle 先下载oracle的image 1docker pull wnameless/oracle-xe-11g  运行并开放窗口 1docker run -d -p 49160:22 -p 49161:1521">
+<meta property="og:description" content="是时候让你的 hexo 博客支持 dark mode 了！ 原理简单粗暴的 dark mode 实现方案CSS 支持了滤镜 filter，可以用来改变颜色。那么最简单 dark mode 不如用“将整个页面反色”实现。下面一句话搞定：123html &amp;#123;	filter: invert(100%);&amp;#125; 但是这样子的话会导致图片也被反色，就会很诡异。💡 顺着这个简单的思路，那么把图">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-01T02:52:51.420Z">
+<meta property="og:updated_time" content="2020-05-03T15:26:53.944Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="install oracle on Mac os X | mac下oracle的最佳实践">
-<meta name="twitter:description" content="想在mac下安装oracle？so easy！虽然oracle在os X下并没有release，但是有了docker我们可以轻松实现。 安装docker参考这个 在docker里安装Oracle 先下载oracle的image 1docker pull wnameless/oracle-xe-11g  运行并开放窗口 1docker run -d -p 49160:22 -p 49161:1521">
+<meta name="twitter:title" content="让你的 hexo next 主题支持 dark mode">
+<meta name="twitter:description" content="是时候让你的 hexo 博客支持 dark mode 了！ 原理简单粗暴的 dark mode 实现方案CSS 支持了滤镜 filter，可以用来改变颜色。那么最简单 dark mode 不如用“将整个页面反色”实现。下面一句话搞定：123html &amp;#123;	filter: invert(100%);&amp;#125; 但是这样子的话会导致图片也被反色，就会很诡异。💡 顺着这个简单的思路，那么把图">
 
 
 
 
 
 
-  <link rel="canonical" href="https://blog.keyi-li.com/2018/04/11/mac-oracle/">
+  <link rel="canonical" href="https://blog.keyi-li.com/2020/05/03/dark-mode-in-next/">
 
 
 
@@ -136,7 +136,7 @@
   };
 </script>
 
-  <title>install oracle on Mac os X | mac下oracle的最佳实践 | k's blog</title>
+  <title>让你的 hexo next 主题支持 dark mode | k's blog</title>
   
 
 
@@ -319,7 +319,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://blog.keyi-li.com/2018/04/11/mac-oracle/">
+    <link itemprop="mainEntityOfPage" href="https://blog.keyi-li.com/2020/05/03/dark-mode-in-next/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="cjhahaha">
@@ -336,7 +336,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">install oracle on Mac os X | mac下oracle的最佳实践
+          <h2 class="post-title" itemprop="name headline">让你的 hexo next 主题支持 dark mode
 
               
             
@@ -362,46 +362,16 @@
                 
               
 
-              <time title="Created: 2018-04-11 18:52:23" itemprop="dateCreated datePublished" datetime="2018-04-11T18:52:23+08:00">2018-04-11</time>
+              <time title="Created: 2020-05-03 23:03:20 / Modified: 23:26:53" itemprop="dateCreated datePublished" datetime="2020-05-03T23:03:20+08:00">2020-05-03</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-03-01 10:52:51" itemprop="dateModified" datetime="2019-03-01T10:52:51+08:00">2019-03-01</time>
               
             
           </span>
 
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/安装教程/" itemprop="url" rel="index"><span itemprop="name">安装教程</span></a></span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -431,24 +401,14 @@
       
 
       
-        <p>想在mac下安装oracle？so easy！虽然oracle在os X下并没有release，但是有了docker我们可以轻松实现。</p>
-<h2 id="安装docker"><a href="#安装docker" class="headerlink" title="安装docker"></a>安装docker</h2><p>参考<a href="https://yeasy.gitbooks.io/docker_practice/content/install/mac.html" target="_blank" rel="noopener">这个</a></p>
-<h2 id="在docker里安装Oracle"><a href="#在docker里安装Oracle" class="headerlink" title="在docker里安装Oracle"></a>在docker里安装Oracle</h2><ol>
-<li><p>先下载oracle的image</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull wnameless/oracle-xe-11g</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>运行并开放窗口</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d -p 49160:22 -p 49161:1521 wnameless/oracle-xe-11g</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>记下对应的IMAGE ID</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker image ls</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>好了，现在可以在终端里通过<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker <span class="built_in">exec</span> -it 你的IMAGEID /bin/bash</span><br></pre></td></tr></table></figure></p>
-<p>这条命令在你的终端里跑oracle了。</p>
-<p>但是，如果想使用GUI怎么办呢？</p>
-<h2 id="用SQL-developer连接到你的oracle"><a href="#用SQL-developer连接到你的oracle" class="headerlink" title="用SQL developer连接到你的oracle"></a>用SQL developer连接到你的oracle</h2><p>去<a href="http://www.oracle.com/technetwork/developer-tools/sql-developer/downloads/index.html" target="_blank" rel="noopener">下载SQL developer</a>，然后用ssh连接到你的oracle。<br>默认信息为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hostname: localhost</span><br><span class="line">port: 49161</span><br><span class="line">sid: xe</span><br><span class="line">username: system</span><br><span class="line">password: oracle</span><br></pre></td></tr></table></figure></p>
-<p>不过我还没有弄清楚这是在哪里看的。<br>注意连接的时候还有写Host和Port，用下面这条命令就能查询到你的oracle在的Host和Port。<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker ps</span><br></pre></td></tr></table></figure></p>
+        <p>是时候让你的 hexo 博客支持 dark mode 了！</p>
+<h1 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h1><h2 id="简单粗暴的-dark-mode-实现方案"><a href="#简单粗暴的-dark-mode-实现方案" class="headerlink" title="简单粗暴的 dark mode 实现方案"></a>简单粗暴的 dark mode 实现方案</h2><p>CSS 支持了<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter" target="_blank" rel="noopener">滤镜 <code>filter</code></a>，可以用来改变颜色。<br>那么最简单 dark mode 不如用“将整个页面反色”实现。下面一句话搞定：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">html</span> &#123;</span><br><span class="line">	<span class="attribute">filter</span>: <span class="built_in">invert</span>(100%);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>但是这样子的话会导致图片也被反色，就会很诡异。💡 顺着这个简单的思路，那么把图片再反色一次不会还原了？下面一句话搞定：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">img</span> &#123;</span><br><span class="line">	<span class="attribute">filter</span>: <span class="built_in">invert</span>(100%);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="如何检测系统是否是-dark-mode"><a href="#如何检测系统是否是-dark-mode" class="headerlink" title="如何检测系统是否是 dark mode"></a>如何检测系统是否是 dark mode</h2><p>目前浏览器提供了 media query 来实现，文档见 <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia" target="_blank" rel="noopener">https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia</a> 。</p>
+<h1 id="让-next-主题支持-dark-mode"><a href="#让-next-主题支持-dark-mode" class="headerlink" title="让 next 主题支持 dark mode"></a>让 next 主题支持 dark mode</h1><p>编辑 <code>themes/next/layout/_layout.swig</code>，<br>将下列代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="selector-tag">style</span>&gt;</span><br><span class="line">	@<span class="keyword">media</span> (prefers-color-scheme: dark) &#123;</span><br><span class="line">		<span class="selector-tag">html</span> &#123;</span><br><span class="line">			<span class="attribute">filter</span>: <span class="built_in">invert</span>(100%);</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="selector-tag">img</span> &#123;</span><br><span class="line">			<span class="attribute">filter</span>: <span class="built_in">invert</span>(100%);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure></p>
+<p>添加到<code>&lt;head&gt;</code>和<code>&lt;\head&gt;</code>之间即可。</p>
+<h1 id="让别的主题支持"><a href="#让别的主题支持" class="headerlink" title="让别的主题支持"></a>让别的主题支持</h1><p>hexo 的本质是将博客生成到静态页面里，然后静态页面直接托管到 github 上，省去了一般博客的从数据库里读取文章再将内容展示到页面这个过程。<br>所以只要找到该主题的会被渲染成 index.html 的那个文件，在其中按照上一节所说的方式添加代码，就好了。</p>
+<h1 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h1><p>当然有很多别的方式实现，比如在页面中引入 darkmode.js 等等，本文只是提供一个最简单的思路。</p>
 
       
     </div>
@@ -472,9 +432,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/docker/" rel="tag"><i class="fa fa-tag"></i> docker</a>
-          
-            <a href="/tags/oracle/" rel="tag"><i class="fa fa-tag"></i> oracle</a>
+            <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
           
         </div>
       
@@ -487,15 +445,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2020/04/16/ANTRL4-Python-Calculator/" rel="next" title="用 ANTLR4 和 python 十多行代码写一个计算器">
+                <i class="fa fa-chevron-left"></i> 用 ANTLR4 和 python 十多行代码写一个计算器
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/05/06/shadowsock/" rel="prev" title="ss set up | 安装ss">
-                ss set up | 安装ss <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -667,7 +625,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装docker"><span class="nav-number">1.</span> <span class="nav-text">安装docker</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在docker里安装Oracle"><span class="nav-number">2.</span> <span class="nav-text">在docker里安装Oracle</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用SQL-developer连接到你的oracle"><span class="nav-number">3.</span> <span class="nav-text">用SQL developer连接到你的oracle</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#原理"><span class="nav-number">1.</span> <span class="nav-text">原理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#简单粗暴的-dark-mode-实现方案"><span class="nav-number">1.1.</span> <span class="nav-text">简单粗暴的 dark mode 实现方案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何检测系统是否是-dark-mode"><span class="nav-number">1.2.</span> <span class="nav-text">如何检测系统是否是 dark mode</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#让-next-主题支持-dark-mode"><span class="nav-number">2.</span> <span class="nav-text">让 next 主题支持 dark mode</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#让别的主题支持"><span class="nav-number">3.</span> <span class="nav-text">让别的主题支持</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#其它"><span class="nav-number">4.</span> <span class="nav-text">其它</span></a></li></ol></div>
             
 
           </div>

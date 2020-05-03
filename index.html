@@ -16,6 +16,18 @@
 
 <html class="theme-next mist use-motion" lang>
 <head><meta name="generator" content="Hexo 3.8.0">
+  <style>
+	@media (prefers-color-scheme: dark) {
+		html {
+			filter: invert(100%);
+		}
+
+		img {
+			filter: invert(100%);
+		}
+	}
+  </style>
+
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -159,13 +171,6 @@
 </noscript>
 
 
-  <style>
-	@media (prefers-color-scheme: dark) {
-		html {
-			filter: invert(100%);
-		}
-	}
-  </style>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="default">
@@ -294,6 +299,162 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://blog.keyi-li.com/2020/05/03/dark-mode-in-next/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="cjhahaha">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="k's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2020/05/03/dark-mode-in-next/" class="post-title-link" itemprop="url">让你的 hexo next 主题支持 dark mode</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2020-05-03 23:03:20 / Modified: 23:26:53" itemprop="dateCreated datePublished" datetime="2020-05-03T23:03:20+08:00">2020-05-03</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>
+              是时候让你的 hexo 博客支持 dark mode 了！
+原理简单粗暴的 dark mode 实现方案CSS 支持了滤镜 filter，可以用来改变颜色。那么最简单 dark mode 不如用“将整个页面反色”实现。下面一句话搞定：html &#123;	filter: invert(100%);&#125;
+但是这样子的话会导致图片也被反色，就会很诡异。💡 顺着这个简单的思路，那么把图片再反色一次不会还原了？下面一句话搞定：img &#123;	filter: invert(100%);&#125;
+如何检测系统是否是 dark mode目前浏览器提供了 media query 来实现，
+              ...
+            </p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2020/05/03/dark-mode-in-next/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
     
       
 
@@ -1413,7 +1574,7 @@ docker image ls
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -1465,7 +1626,9 @@ docker image ls
                     
                       
                     
-                    <span class="site-state-item-count">12</span>
+                      
+                    
+                    <span class="site-state-item-count">13</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
