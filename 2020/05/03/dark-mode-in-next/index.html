@@ -116,7 +116,7 @@
 <meta property="og:site_name" content="k&#39;s blog">
 <meta property="og:description" content="是时候让你的 hexo 博客支持 dark mode 了！ 原理简单粗暴的 dark mode 实现方案CSS 支持了滤镜 filter，可以用来改变颜色。那么最简单 dark mode 不如用“将整个页面反色”实现。下面一句话搞定：123html &amp;#123;  filter: invert(100%);&amp;#125; 但是这样子的话会导致图片也被反色，就会很诡异。💡 顺着这个简单的思路，那么把">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2020-05-03T15:41:37.003Z">
+<meta property="og:updated_time" content="2020-05-04T01:29:32.913Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="让你的 hexo next 主题支持 dark mode">
 <meta name="twitter:description" content="是时候让你的 hexo 博客支持 dark mode 了！ 原理简单粗暴的 dark mode 实现方案CSS 支持了滤镜 filter，可以用来改变颜色。那么最简单 dark mode 不如用“将整个页面反色”实现。下面一句话搞定：123html &amp;#123;  filter: invert(100%);&amp;#125; 但是这样子的话会导致图片也被反色，就会很诡异。💡 顺着这个简单的思路，那么把">
@@ -362,12 +362,24 @@
                 
               
 
-              <time title="Created: 2020-05-03 23:03:20 / Modified: 23:41:37" itemprop="dateCreated datePublished" datetime="2020-05-03T23:03:20+08:00">2020-05-03</time>
+              <time title="Created: 2020-05-03 23:03:20" itemprop="dateCreated datePublished" datetime="2020-05-03T23:03:20+08:00">2020-05-03</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2020-05-04 09:29:32" itemprop="dateModified" datetime="2020-05-04T09:29:32+08:00">2020-05-04</time>
               
             
           </span>
@@ -404,7 +416,7 @@
         <p>是时候让你的 hexo 博客支持 dark mode 了！</p>
 <h1 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h1><h2 id="简单粗暴的-dark-mode-实现方案"><a href="#简单粗暴的-dark-mode-实现方案" class="headerlink" title="简单粗暴的 dark mode 实现方案"></a>简单粗暴的 dark mode 实现方案</h2><p>CSS 支持了<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter" target="_blank" rel="noopener">滤镜 <code>filter</code></a>，可以用来改变颜色。<br>那么最简单 dark mode 不如用“将整个页面反色”实现。下面一句话搞定：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">html</span> &#123;</span><br><span class="line">  <span class="attribute">filter</span>: <span class="built_in">invert</span>(100%);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>但是这样子的话会导致图片也被反色，就会很诡异。💡 顺着这个简单的思路，那么把图片再反色一次不就还原了？下面一句话搞定：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">img</span> &#123;</span><br><span class="line">  <span class="attribute">filter</span>: <span class="built_in">invert</span>(100%);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h2 id="如何检测系统是否是-dark-mode"><a href="#如何检测系统是否是-dark-mode" class="headerlink" title="如何检测系统是否是 dark mode"></a>如何检测系统是否是 dark mode</h2><p>目前浏览器提供了 media query 来实现，文档见 <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia" target="_blank" rel="noopener">https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia</a> 。</p>
+<h2 id="如何检测系统是否是-dark-mode"><a href="#如何检测系统是否是-dark-mode" class="headerlink" title="如何检测系统是否是 dark mode"></a>如何检测系统是否是 dark mode</h2><p>目前浏览器提供了 <code>prefers-color-scheme</code> 的 media query 来实现，文档见 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme" target="_blank" rel="noopener">https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme</a></p>
 <h1 id="让-next-主题支持-dark-mode"><a href="#让-next-主题支持-dark-mode" class="headerlink" title="让 next 主题支持 dark mode"></a>让 next 主题支持 dark mode</h1><p>编辑 <code>themes/next/layout/_layout.swig</code>，<br>将下列代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="selector-tag">style</span>&gt;</span><br><span class="line">  @<span class="keyword">media</span> (prefers-color-scheme: dark) &#123;</span><br><span class="line">    <span class="selector-tag">html</span> &#123;</span><br><span class="line">      <span class="attribute">filter</span>: <span class="built_in">invert</span>(100%);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="selector-tag">img</span> &#123;</span><br><span class="line">      <span class="attribute">filter</span>: <span class="built_in">invert</span>(100%);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure></p>
 <p>添加到<code>&lt;head&gt;</code>和<code>&lt;\head&gt;</code>之间即可。</p>
 <h1 id="让别的主题支持"><a href="#让别的主题支持" class="headerlink" title="让别的主题支持"></a>让别的主题支持</h1><p>hexo 的本质是将博客生成到静态页面里，然后静态页面直接托管到 github 上，省去了一般博客的从数据库里读取文章再将内容展示到页面这个过程。<br>所以只要找到该主题的会被渲染成 index.html 的那个文件，在其中按照上一节所说的方式添加代码，就好了。</p>
